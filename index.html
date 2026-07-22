@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Holland Economy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>HOLLAND ECONOMY</h1>
+
+<div id="money">
+    Geld: €<span id="moneyAmount">1000</span>
+</div>
+
+<hr>
+
+<div id="tabs">
+
+    <button onclick="showTab('dashboard')">Dashboard</button>
+
+    <button onclick="showTab('work')">Werken</button>
+
+    <button onclick="showTab('market')">Markten</button>
+
+    <button onclick="showTab('companies')">Bedrijven</button>
+
+    <button onclick="showTab('news')">Nieuws</button>
+
+</div>
+
+<hr>
+
+<div id="dashboard" class="tab">
+
+    <h2>Dashboard</h2>
+
+    <p>Welkom bij Holland Economy.</p>
+
+    <p>Passief inkomen: €0/min</p>
+
+    <p>Net Worth: €1000</p>
+
+</div>
+
+<div id="work" class="tab" style="display:none;">
+
+    <h2>Werken</h2>
+
+    <button onclick="startJob('Kaasmarkt')">Kaasmarkt</button>
+
+    <button onclick="startJob('Bloemenmarkt')">Bloemenmarkt</button>
+
+    <button onclick="startJob('Rotterdam Haven')">Rotterdam Haven</button>
+
+    <button onclick="startJob('Tomatenkas')">Tomatenkas</button>
+
+    <button onclick="startJob('Melkfabriek')">Melkfabriek</button>
+
+    <hr>
+
+    <h3 id="jobTitle">Geen werk gekozen</h3>
+
+    <p>Voortgang</p>
+
+    <progress id="progress" value="0" max="20"></progress>
+
+    <br><br>
+
+    <button onclick="workClick()">WERKEN</button>
+
+</div>
+
+<div id="market" class="tab" style="display:none;">
+
+    <h2>Markten</h2>
+
+    <p>Komt binnenkort...</p>
+
+</div>
+
+<div id="companies" class="tab" style="display:none;">
+
+    <h2>Bedrijven</h2>
+
+    <p>Komt binnenkort...</p>
+
+</div>
+
+<div id="news" class="tab" style="display:none;">
+
+    <h2>Nieuws</h2>
+
+    <p>Geen nieuws.</p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
