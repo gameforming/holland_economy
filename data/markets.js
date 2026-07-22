@@ -1,0 +1,355 @@
+const markets = [
+
+{
+    id:"cheese",
+    name:"Kaas",
+    category:"Zuivel",
+    price:18,
+    trend:0,
+    volatility:2,
+    owned:0,
+    history:[18]
+},
+
+{
+    id:"milk",
+    name:"Melk",
+    category:"Zuivel",
+    price:2,
+    trend:0,
+    volatility:1,
+    owned:0,
+    history:[2]
+},
+
+{
+    id:"butter",
+    name:"Boter",
+    category:"Zuivel",
+    price:8,
+    trend:0,
+    volatility:2,
+    owned:0,
+    history:[8]
+},
+
+{
+    id:"yogurt",
+    name:"Yoghurt",
+    category:"Zuivel",
+    price:4,
+    trend:0,
+    volatility:1,
+    owned:0,
+    history:[4]
+},
+
+{
+    id:"cream",
+    name:"Room",
+    category:"Zuivel",
+    price:6,
+    trend:0,
+    volatility:2,
+    owned:0,
+    history:[6]
+},
+
+{
+    id:"goatcheese",
+    name:"Geitenkaas",
+    category:"Zuivel",
+    price:22,
+    trend:0,
+    volatility:3,
+    owned:0,
+    history:[22]
+},
+
+{
+    id:"tulips",
+    name:"Tulpen",
+    category:"Bloemen",
+    price:12,
+    trend:0,
+    volatility:3,
+    owned:0,
+    history:[12]
+},
+
+{
+    id:"roses",
+    name:"Rozen",
+    category:"Bloemen",
+    price:10,
+    trend:0,
+    volatility:2,
+    owned:0,
+    history:[10]
+},
+
+{
+    id:"lilies",
+    name:"Lelies",
+    category:"Bloemen",
+    price:14,
+    trend:0,
+    volatility:3,
+    owned:0,
+    history:[14]
+},
+
+{
+    id:"orchids",
+    name:"Orchideeën",
+    category:"Bloemen",
+    price:25,
+    trend:0,
+    volatility:4,
+    owned:0,
+    history:[25]
+},
+
+{
+    id:"tomatoes",
+    name:"Tomaten",
+    category:"Groenten",
+    price:4,
+    trend:0,
+    volatility:2,
+    owned:0,
+    history:[4]
+},
+
+{
+    id:"paprika",
+    name:"Paprika",
+    category:"Groenten",
+    price:5,
+    trend:0,
+    volatility:2,
+    owned:0,
+    history:[5]
+},
+
+{
+    id:"cucumber",
+    name:"Komkommer",
+    category:"Groenten",
+    price:3,
+    trend:0,
+    volatility:2,
+    owned:0,
+    history:[3]
+},
+
+{
+    id:"potatoes",
+    name:"Aardappelen",
+    category:"Groenten",
+    price:2,
+    trend:0,
+    volatility:1,
+    owned:0,
+    history:[2]
+},
+
+{
+    id:"onions",
+    name:"Uien",
+    category:"Groenten",
+    price:2,
+    trend:0,
+    volatility:2,
+    owned:0,
+    history:[2]
+},
+
+{
+    id:"apples",
+    name:"Appels",
+    category:"Fruit",
+    price:4,
+    trend:0,
+    volatility:2,
+    owned:0,
+    history:[4]
+},
+
+{
+    id:"pears",
+    name:"Peren",
+    category:"Fruit",
+    price:5,
+    trend:0,
+    volatility:2,
+    owned:0,
+    history:[5]
+},
+
+{
+    id:"strawberries",
+    name:"Aardbeien",
+    category:"Fruit",
+    price:8,
+    trend:0,
+    volatility:4,
+    owned:0,
+    history:[8]
+},
+
+{
+    id:"herring",
+    name:"Haring",
+    category:"Vis",
+    price:9,
+    trend:0,
+    volatility:2,
+    owned:0,
+    history:[9]
+},
+
+{
+    id:"salmon",
+    name:"Zalm",
+    category:"Vis",
+    price:16,
+    trend:0,
+    volatility:3,
+    owned:0,
+    history:[16]
+},
+
+{
+    id:"shrimp",
+    name:"Garnalen",
+    category:"Vis",
+    price:22,
+    trend:0,
+    volatility:4,
+    owned:0,
+    history:[22]
+},
+
+{
+    id:"containers",
+    name:"Containers",
+    category:"Haven",
+    price:120,
+    trend:0,
+    volatility:5,
+    owned:0,
+    history:[120]
+},
+
+{
+    id:"oil",
+    name:"Olie",
+    category:"Haven",
+    price:80,
+    trend:0,
+    volatility:5,
+    owned:0,
+    history:[80]
+},
+
+{
+    id:"gas",
+    name:"Gas",
+    category:"Energie",
+    price:40,
+    trend:0,
+    volatility:5,
+    owned:0,
+    history:[40]
+},
+
+{
+    id:"electricity",
+    name:"Elektriciteit",
+    category:"Energie",
+    price:15,
+    trend:0,
+    volatility:4,
+    owned:0,
+    history:[15]
+},
+
+{
+    id:"wind",
+    name:"Windenergie",
+    category:"Energie",
+    price:20,
+    trend:0,
+    volatility:3,
+    owned:0,
+    history:[20]
+},
+
+{
+    id:"steel",
+    name:"Staal",
+    category:"Bouw",
+    price:30,
+    trend:0,
+    volatility:3,
+    owned:0,
+    history:[30]
+},
+
+{
+    id:"wood",
+    name:"Hout",
+    category:"Bouw",
+    price:18,
+    trend:0,
+    volatility:3,
+    owned:0,
+    history:[18]
+},
+
+{
+    id:"concrete",
+    name:"Beton",
+    category:"Bouw",
+    price:25,
+    trend:0,
+    volatility:2,
+    owned:0,
+    history:[25]
+},
+
+{
+    id:"beer",
+    name:"Bier",
+    category:"Luxe",
+    price:7,
+    trend:0,
+    volatility:2,
+    owned:0,
+    history:[7]
+},
+
+{
+    id:"stroopwafels",
+    name:"Stroopwafels",
+    category:"Luxe",
+    price:11,
+    trend:0,
+    volatility:2,
+    owned:0,
+    history:[11]
+},
+
+{
+    id:"chocolate",
+    name:"Chocolade",
+    category:"Luxe",
+    price:14,
+    trend:0,
+    volatility:3,
+    owned:0,
+    history:[14]
+}
+
+];
